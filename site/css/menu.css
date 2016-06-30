@@ -5,18 +5,19 @@ font-family:Arial, sans-serif;
 font-size:16px;
 }
 h1{text-align:center;
-padding:35px 40px 25px 40px;
+padding:35px 40px 0px 40px;
 }
 h2{display:block;
-	padding:5px 40px 5px 40px;
+	padding:5px 10px 5px 10px;
 	text-align:center;
-	width: 30%;
+	width: 40%;
     border-left: 1px solid black;
     border-bottom: 1px solid black;
     background: #5F9EA0;
     height: auto;
     float: right;
     margin: 0;
+    
 }
 .clearfix::after {
     content: "";
@@ -41,11 +42,35 @@ float: right;
     height: auto;
     float: left;
     margin: 1%;
+    box-sizing: border-box;
 }
 .color1 { background:#B22222;
 }
 .color2 { background:#FF0000;
 color:white;
+
 }
 .color3 { background:#FFFF00;
 }
+@media screen and (max-width: 991px) {
+#container > #div3 {clear:both;
+width:98%;
+}
+#container > #div1 {
+width:48%;
+}
+#container > #div2 {
+width:48%;
+}
+ }
+@media screen and (max-width: 767px) {
+#container > #div3 {clear:both;
+width:98%;
+}
+#container > #div1 {
+width:98%;
+}
+#container > #div2 {clear:both;
+width:98%;
+}
+ }
